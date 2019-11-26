@@ -48,7 +48,8 @@ class Example(QMainWindow, Ui_MainWindow):
         s = random.randint(4, 50)
         x = random.randint(0, 700)
         y = random.randint(0, 500)
-        qp.setBrush(QColor(255, 211, 0))
+        one, two, three = random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)
+        qp.setBrush(QColor(one, two, three))
         qp.drawEllipse(x, y, s, s)
 
     def buttn(self):
